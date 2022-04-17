@@ -1,0 +1,582 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : true,
+		"bloomhdrfeather" : 
+		{
+			"user" : "hdrthresholdsmoothing",
+			"value" : 0.25
+		},
+		"bloomhdriterations" : 8,
+		"bloomhdrscatter" : 
+		{
+			"user" : "hdrscatter",
+			"value" : 2.0
+		},
+		"bloomhdrstrength" : 
+		{
+			"user" : "hdrstrength",
+			"value" : 3.0
+		},
+		"bloomhdrthreshold" : 
+		{
+			"user" : "hdrthreshold",
+			"value" : 0.94999999
+		},
+		"bloomstrength" : 
+		{
+			"user" : "bloomstrength",
+			"value" : 1.0
+		},
+		"bloomthreshold" : 
+		{
+			"user" : "bloomthreshold",
+			"value" : 0.94999999
+		},
+		"camerafade" : true,
+		"cameraparallax" : 
+		{
+			"user" : "clockparallax",
+			"value" : true
+		},
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.1,
+		"cameraparallaxmouseinfluence" : 0.5,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 3.0,
+		"clearcolor" : "0.70000 0.70000 0.70000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"hdr" : true,
+		"nearz" : 0.0099999998,
+		"orthogonalprojection" : 
+		{
+			"height" : 2160,
+			"width" : 3840
+		},
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"zoom" : 1.0
+	},
+	"objects" : 
+	[
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/spin/effect.json",
+					"id" : 183,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"REPEAT" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"center" : "0.5 0.5",
+								"speed" : 
+								{
+									"user" : "playbackrate",
+									"value" : 0.25
+								}
+							},
+							"id" : 184
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 143,
+			"image" : "models/workshop/2093591151/r_angle.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Rainbow Angle",
+			"origin" : "200.00000 200.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "256.00000 256.00000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 
+			{
+				"user" : "backgroundhdr",
+				"value" : 1.0
+			},
+			"color" : 
+			{
+				"user" : "backgroundcolor",
+				"value" : "0.15686 0.15686 0.15294"
+			},
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 21,
+			"image" : "models/util/solidlayer.json",
+			"ledsource" : false,
+			"locktransforms" : false,
+			"name" : "Background",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "3840.00000 2160.00000",
+			"solid" : true,
+			"visible" : false
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/transform/effect.json",
+					"id" : 99,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"CLAMP" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"angle" : 0.0,
+								"offset" : "70 70",
+								"scale" : "27.4 15.4"
+							},
+							"id" : 100
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 91,
+			"image" : "models/Background.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Background",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "55.00000 31.00000 1.00000",
+			"size" : "70.00000 70.00000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 109,
+			"instanceoverride" : null,
+			"locktransforms" : true,
+			"name" : "Small Snowflakes",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/Small_Snowflakes.json",
+			"scale" : "1.00000 1.00000 1.00000",
+			"visible" : 
+			{
+				"user" : "snow",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 127,
+			"instanceoverride" : null,
+			"locktransforms" : true,
+			"name" : "Large Snowflakes",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/Large_Snowflakes.json",
+			"scale" : "1.00000 1.00000 1.00000",
+			"visible" : 
+			{
+				"user" : "snow",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 67,
+			"image" : "models/Center_Image.json",
+			"ledsource" : false,
+			"locktransforms" : false,
+			"name" : "Center_Image",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "0.75000 0.75000 1.00000",
+			"size" : "1080.00000 1080.00000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"config" : 
+			{
+				"passthrough" : true
+			},
+			"copybackground" : false,
+			"dependencies" : [ 143 ],
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2084198056/Simple_Audio_Bars/effect.json",
+					"id" : 239,
+					"name" : "Audio",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"ANTIALIAS" : 1,
+								"A_SMOOTH_CURVE" : 0,
+								"BLENDMODE" : 9,
+								"CLIP_HIGH" : 0,
+								"CLIP_LOW" : 1,
+								"RESOLUTION" : 32,
+								"SHAPE" : 4,
+								"TRANSPARENCY" : 2
+							},
+							"constantshadervalues" : 
+							{
+								"Anti-alias blurring" : "0.06 0.06",
+								"Bar Color" : "1 1 1",
+								"Bar Count" : 156,
+								"Bar Spacing" : 0.5,
+								"Lower/Upper Bar Bounds" : "0.4 0.55",
+								"ui_editor_properties_opacity" : 1.0
+							},
+							"id" : 240
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/spin/effect.json",
+					"id" : 373,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"ELLIPTICAL" : 0,
+								"MODE" : 0,
+								"PERSPECTIVE" : 1,
+								"REPEAT" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"center" : "0.5 0.5",
+								"speed" : 
+								{
+									"user" : "audiospin",
+									"value" : 1
+								}
+							},
+							"id" : 374
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/blend/effect.json",
+					"id" : 203,
+					"name" : "Audio Visualizer Rainbow Angle",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"multiply" : 1.0
+							},
+							"id" : 204,
+							"textures" : [ null, "_rt_imageLayerComposite_143_a" ]
+						}
+					],
+					"visible" : 
+					{
+						"user" : 
+						{
+							"condition" : "0",
+							"name" : "audioringcoloroptions"
+						},
+						"value" : true
+					}
+				},
+				{
+					"file" : "effects/opacity/effect.json",
+					"id" : 382,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0
+							},
+							"id" : 384
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 237,
+			"image" : "models/util/composelayer.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Audio Visualizer",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "1.05000 1.05000 1.00000",
+			"size" : "2048.00000 2048.00000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2138904733/cutout_vignette/effect.json",
+					"id" : 190,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"Cutout Alpha" : 
+								{
+									"user" : "cutoutopacity",
+									"value" : 1
+								},
+								"Cutout Color" : 
+								{
+									"user" : "cutoutcolor",
+									"value" : "0.21176 0.21176 0.21569"
+								},
+								"Cutout Gradient Value 1 (Fade = 0.1)" : 
+								{
+									"user" : "cutoutstrengthvalue1",
+									"value" : 0
+								},
+								"Cutout Gradient Value 2 (Fade = 0.9)" : 
+								{
+									"user" : "cutoutgradientvalue2",
+									"value" : 0.89999998
+								},
+								"Cutout Offset" : 0.5,
+								"Cutout Scale" : 
+								{
+									"user" : "cutoutscale",
+									"value" : 2
+								},
+								"Cutout Skew" : 
+								{
+									"user" : "cutoutskew",
+									"value" : -1.01
+								},
+								"Cutout Skew Shift X" : 0.5,
+								"Cutout Skew Shift Y" : 0.5
+							},
+							"id" : 191
+						}
+					],
+					"visible" : 
+					{
+						"user" : "cutout",
+						"value" : true
+					}
+				}
+			],
+			"id" : 186,
+			"image" : "models/util/fullscreenlayer.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Vignette",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "center",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : 
+			{
+				"user" : "clockshadow",
+				"value" : "0.13725 0.12157 0.12549"
+			},
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "fonts/RazerBlackwidow-Regular.ttf",
+			"horizontalalign" : "center",
+			"id" : 296,
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Clock Shadow",
+			"opaquebackground" : false,
+			"origin" : 
+			{
+				"script" : "'use strict';\nlet originX;\nlet originY;\n/**\n * @param {Vec3} value - for property 'origin'\n */\nexport function update(value) {\n    \n    return new Vec3(originX,originY,value.z);\n}\n\n/**\n * @param {Object} changedUserProperties - only includes user properties that were recently changed!\n */\nexport function applyUserProperties(changedUserProperties) {\n    if (changedUserProperties.clockoriginx != undefined)\n        originX = (engine.screenResolution.x/100)*changedUserProperties.clockoriginx;\n    if (changedUserProperties.clockoriginy != undefined)\n        originY = (engine.screenResolution.y/100)*changedUserProperties.clockoriginy;\n}\n",
+				"value" : "1920.00000 200.00000 0.00000"
+			},
+			"padding" : 32,
+			"parallaxDepth" : "0.01000 0.01300",
+			"perspective" : false,
+			"pointsize" : 32.0,
+			"scale" : "1.10000 1.10000 1.10000",
+			"size" : "354.00000 100.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n\n\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n\n//No need to register case 0 if that is the font currently set as default (in use).\nlet font0 = engine.registerAsset(\"fonts/RazerF5-Bold.otf\");\nlet font1 = engine.registerAsset(\"fonts/RazerBlackwidow-Regular.ttf\");\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n\n\nexport function applyUserProperties(userProperties) {\n    if(userProperties.hasOwnProperty('clockfont')){\n        switch(userProperties.clockfont){\n\t    case(\"0\"):\n            thisLayer.font = font0;\n            break;\n            case(\"1\"):\n            thisLayer.font = font1;\n            break;\n        }\n    }\n}",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : false
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"script" : "'use strict';\n\nlet isDisabled = true;\nlet userValue;\n\n/**\n * @param {Boolean} value - for property 'visible'\n */\nexport function update() {\n\tif (isDisabled) {\n\t\treturn false;\n\t}\n\treturn userValue;\n}\n\n/**\n * @param {Object} changedUserProperties - only includes user properties that were recently changed!\n */\nexport function applyUserProperties(changedUserProperties) {\n\tif (changedUserProperties.hasOwnProperty('clock')) {\n\t\tisDisabled = !changedUserProperties.clock;\n\t}\n\tif (changedUserProperties.hasOwnProperty('clockshadow1')) {\n\t\tuserValue = changedUserProperties.clockshadow1;\n\t}\n}\n",
+				"user" : "clockshadow1",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"dependencies" : [ 143 ],
+			"effects" : 
+			[
+				{
+					"file" : "effects/blend/effect.json",
+					"id" : 266,
+					"name" : "Clock Rainbow Angle",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"multiply" : 1.0
+							},
+							"id" : 267,
+							"textures" : [ null, "_rt_imageLayerComposite_143_a" ]
+						}
+					],
+					"visible" : 
+					{
+						"user" : 
+						{
+							"condition" : "0",
+							"name" : "clockcolor"
+						},
+						"value" : true
+					}
+				}
+			],
+			"font" : "fonts/RazerBlackwidow-Regular.ttf",
+			"horizontalalign" : "center",
+			"id" : 312,
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : 
+			{
+				"script" : "'use strict';\nlet originX;\nlet originY;\n/**\n * @param {Vec3} value - for property 'origin'\n */\nexport function update(value) {\n    \n    return new Vec3(originX,originY,value.z);\n}\n\n/**\n * @param {Object} changedUserProperties - only includes user properties that were recently changed!\n */\nexport function applyUserProperties(changedUserProperties) {\n    if (changedUserProperties.clockoriginx != undefined)\n        originX = (engine.screenResolution.x/100)*changedUserProperties.clockoriginx;\n    if (changedUserProperties.clockoriginy != undefined)\n        originY = (engine.screenResolution.y/100)*changedUserProperties.clockoriginy;\n}\n",
+				"value" : "1920.00000 200.00000 0.00000"
+			},
+			"padding" : 32,
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"pointsize" : 32.0,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "418.00000 164.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n\n\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n\n//No need to register case 0 if that is the font currently set as default (in use).\nlet font0 = engine.registerAsset(\"fonts/RazerF5-Bold.otf\");\nlet font1 = engine.registerAsset(\"fonts/RazerBlackwidow-Regular.ttf\");\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n\n\nexport function applyUserProperties(userProperties) {\n    if(userProperties.hasOwnProperty('clockfont')){\n        switch(userProperties.clockfont){\n\t    case(\"0\"):\n            thisLayer.font = font0;\n            break;\n            case(\"1\"):\n            thisLayer.font = font1;\n            break;\n        }\n    }\n}",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : false
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "clock",
+				"value" : true
+			}
+		}
+	],
+	"version" : 1
+}
