@@ -46,10 +46,10 @@
 			"bloomstrength" : 
 			{
 				"fraction" : true,
-				"index" : 16,
+				"index" : 11,
 				"max" : 5,
 				"min" : 0,
-				"order" : 116,
+				"order" : 111,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Bloom Strength",
@@ -59,74 +59,20 @@
 			"bloomthreshold" : 
 			{
 				"fraction" : true,
-				"index" : 17,
+				"index" : 12,
 				"max" : 1,
 				"min" : 0,
-				"order" : 117,
+				"order" : 112,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Bloom Threshold",
 				"type" : "slider",
 				"value" : 0.95
 			},
-			"clock" : 
+			"cutout" : 
 			{
 				"index" : 4,
 				"order" : 104,
-				"text" : "Clock",
-				"type" : "bool",
-				"value" : true
-			},
-			"clockoriginx" : 
-			{
-				"condition" : "clock.value",
-				"fraction" : true,
-				"index" : 5,
-				"max" : 200,
-				"min" : 0,
-				"order" : 105,
-				"precision" : 1,
-				"step" : 1,
-				"text" : "Clock Origin X",
-				"type" : "slider",
-				"value" : 188
-			},
-			"clockoriginy" : 
-			{
-				"condition" : "clock.value",
-				"fraction" : true,
-				"index" : 6,
-				"max" : 200,
-				"min" : 0,
-				"order" : 106,
-				"precision" : 1,
-				"step" : 1,
-				"text" : "Clock Origin Y",
-				"type" : "slider",
-				"value" : 16
-			},
-			"clockshadow" : 
-			{
-				"condition" : "clock.value && clockshadow1.value",
-				"index" : 8,
-				"order" : 108,
-				"text" : "Clock Shadow Color",
-				"type" : "color",
-				"value" : "0.13725490196078433 0.12156862745098039 0.12549019607843137"
-			},
-			"clockshadow1" : 
-			{
-				"condition" : "clock.value",
-				"index" : 7,
-				"order" : 107,
-				"text" : "Clock Shadow",
-				"type" : "bool",
-				"value" : true
-			},
-			"cutout" : 
-			{
-				"index" : 9,
-				"order" : 109,
 				"text" : "Cutout",
 				"type" : "bool",
 				"value" : true
@@ -134,8 +80,8 @@
 			"cutoutcolor" : 
 			{
 				"condition" : "cutout.value",
-				"index" : 12,
-				"order" : 112,
+				"index" : 7,
+				"order" : 107,
 				"text" : "Cutout Color",
 				"type" : "color",
 				"value" : "0.03529411764705882 0.03529411764705882 0.03529411764705882"
@@ -143,10 +89,10 @@
 			"cutoutgradientvalue2" : 
 			{
 				"fraction" : true,
-				"index" : 11,
+				"index" : 6,
 				"max" : 1,
 				"min" : 0,
-				"order" : 111,
+				"order" : 106,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Cutout Gradient Value 2",
@@ -157,10 +103,10 @@
 			{
 				"condition" : "cutout.value",
 				"fraction" : true,
-				"index" : 13,
+				"index" : 8,
 				"max" : 1,
 				"min" : 0,
-				"order" : 113,
+				"order" : 108,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Cutout Opacity",
@@ -171,10 +117,10 @@
 			{
 				"condition" : "cutout.value",
 				"fraction" : true,
-				"index" : 14,
+				"index" : 9,
 				"max" : 8,
 				"min" : 0.1,
-				"order" : 114,
+				"order" : 109,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Cutout Scale",
@@ -185,10 +131,10 @@
 			{
 				"condition" : "cutout.value",
 				"fraction" : true,
-				"index" : 15,
+				"index" : 10,
 				"max" : 1,
 				"min" : -1,
-				"order" : 115,
+				"order" : 110,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Cutout Skew",
@@ -198,10 +144,10 @@
 			"cutoutstrengthvalue1" : 
 			{
 				"fraction" : true,
-				"index" : 10,
+				"index" : 5,
 				"max" : 1,
 				"min" : 0,
-				"order" : 110,
+				"order" : 105,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Cutout Gradient Value 1",
@@ -211,10 +157,10 @@
 			"hdrscatter" : 
 			{
 				"fraction" : true,
-				"index" : 19,
+				"index" : 14,
 				"max" : 2,
 				"min" : 0,
-				"order" : 119,
+				"order" : 114,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "HDR Scatter",
@@ -224,10 +170,10 @@
 			"hdrstrength" : 
 			{
 				"fraction" : true,
-				"index" : 18,
+				"index" : 13,
 				"max" : 10,
 				"min" : 0,
-				"order" : 118,
+				"order" : 113,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "HDR Strength",
@@ -237,10 +183,10 @@
 			"hdrthreshold" : 
 			{
 				"fraction" : true,
-				"index" : 20,
+				"index" : 15,
 				"max" : 1,
 				"min" : 0,
-				"order" : 120,
+				"order" : 115,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "HDR Threshold",
@@ -250,10 +196,10 @@
 			"hdrthresholdsmoothing" : 
 			{
 				"fraction" : true,
-				"index" : 21,
+				"index" : 16,
 				"max" : 1,
 				"min" : 0,
-				"order" : 121,
+				"order" : 116,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "HDR Threshold Smoothing",
@@ -283,9 +229,9 @@
 			},
 			"snow" : 
 			{
-				"index" : 22,
-				"order" : 122,
-				"text" : "Snow",
+				"index" : 17,
+				"order" : 117,
+				"text" : "Easter Eggs",
 				"type" : "bool",
 				"value" : true
 			}
