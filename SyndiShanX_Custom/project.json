@@ -293,10 +293,12 @@
 		"supportsaudioprocessing" : true
 	},
 	"preview" : "preview.jpg",
+	"snapshotformat" : -1,
+	"snapshotoverlay" : "",
 	"tags" : [ "Unspecified" ],
 	"title" : "SyndiShanX Custom (Snow)",
 	"type" : "scene",
-	"version" : 5,
+	"version" : 6,
 	"visibility" : "public",
 	"workshopid" : "2795612085",
 	"workshopurl" : "steam://url/CommunityFilePage/2795612085"

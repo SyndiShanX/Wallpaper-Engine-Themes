@@ -165,10 +165,6 @@
 					"passes" : 
 					[
 						{
-							"combos" : 
-							{
-								"CLAMP" : 1
-							},
 							"constantshadervalues" : 
 							{
 								"angle" : 0.0,
@@ -199,10 +195,10 @@
 			"id" : 109,
 			"instanceoverride" : null,
 			"locktransforms" : true,
-			"name" : "Small Snowflakes",
+			"name" : "Small Particles",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"particle" : "particles/Small_Snowflakes.json",
+			"particle" : "particles/Small_Particle.json",
 			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
@@ -215,10 +211,26 @@
 			"id" : 127,
 			"instanceoverride" : null,
 			"locktransforms" : true,
-			"name" : "Large Snowflakes",
+			"name" : "Medium Particles",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"particle" : "particles/Large_Snowflakes.json",
+			"particle" : "particles/Medium_Particle.json",
+			"scale" : "1.00000 1.00000 1.00000",
+			"visible" : 
+			{
+				"user" : "snow",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 127,
+			"instanceoverride" : null,
+			"locktransforms" : true,
+			"name" : "Large Particles",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/Large_Particle.json",
 			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
@@ -272,11 +284,8 @@
 							"combos" : 
 							{
 								"ANTIALIAS" : 1,
-								"A_SMOOTH_CURVE" : 0,
 								"BLENDMODE" : 9,
-								"CLIP_HIGH" : 0,
 								"CLIP_LOW" : 1,
-								"RESOLUTION" : 32,
 								"SHAPE" : 4,
 								"TRANSPARENCY" : 2
 							},
@@ -303,9 +312,6 @@
 						{
 							"combos" : 
 							{
-								"ELLIPTICAL" : 0,
-								"MODE" : 0,
-								"PERSPECTIVE" : 1,
 								"REPEAT" : 0
 							},
 							"constantshadervalues" : 
@@ -448,134 +454,6 @@
 			"perspective" : false,
 			"solid" : true,
 			"visible" : true
-		},
-		{
-			"alpha" : 1.0,
-			"anchor" : "center",
-			"angles" : "0.00000 0.00000 0.00000",
-			"backgroundbrightness" : 1.0,
-			"backgroundcolor" : "0.00000 0.00000 0.00000",
-			"brightness" : 1.0,
-			"color" : 
-			{
-				"user" : "clockshadow",
-				"value" : "0.13725 0.12157 0.12549"
-			},
-			"colorBlendMode" : 0,
-			"copybackground" : true,
-			"font" : "fonts/RazerBlackwidow-Regular.ttf",
-			"horizontalalign" : "center",
-			"id" : 296,
-			"ledsource" : false,
-			"locktransforms" : true,
-			"name" : "Clock Shadow",
-			"opaquebackground" : false,
-			"origin" : 
-			{
-				"script" : "'use strict';\nlet originX;\nlet originY;\n/**\n * @param {Vec3} value - for property 'origin'\n */\nexport function update(value) {\n    \n    return new Vec3(originX,originY,value.z);\n}\n\n/**\n * @param {Object} changedUserProperties - only includes user properties that were recently changed!\n */\nexport function applyUserProperties(changedUserProperties) {\n    if (changedUserProperties.clockoriginx != undefined)\n        originX = (engine.screenResolution.x/100)*changedUserProperties.clockoriginx;\n    if (changedUserProperties.clockoriginy != undefined)\n        originY = (engine.screenResolution.y/100)*changedUserProperties.clockoriginy;\n}\n",
-				"value" : "1920.00000 200.00000 0.00000"
-			},
-			"padding" : 32,
-			"parallaxDepth" : "0.01000 0.01300",
-			"perspective" : false,
-			"pointsize" : 32.0,
-			"scale" : "1.10000 1.10000 1.10000",
-			"size" : "354.00000 100.00000",
-			"solid" : true,
-			"text" : 
-			{
-				"script" : "'use strict';\n\n\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n\n//No need to register case 0 if that is the font currently set as default (in use).\nlet font0 = engine.registerAsset(\"fonts/RazerF5-Bold.otf\");\nlet font1 = engine.registerAsset(\"fonts/RazerBlackwidow-Regular.ttf\");\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n\n\nexport function applyUserProperties(userProperties) {\n    if(userProperties.hasOwnProperty('clockfont')){\n        switch(userProperties.clockfont){\n\t    case(\"0\"):\n            thisLayer.font = font0;\n            break;\n            case(\"1\"):\n            thisLayer.font = font1;\n            break;\n        }\n    }\n}",
-				"scriptproperties" : 
-				{
-					"delimiter" : ":",
-					"showSeconds" : false,
-					"use24hFormat" : false
-				},
-				"value" : "12:34"
-			},
-			"verticalalign" : "center",
-			"visible" : 
-			{
-				"script" : "'use strict';\n\nlet isDisabled = true;\nlet userValue;\n\n/**\n * @param {Boolean} value - for property 'visible'\n */\nexport function update() {\n\tif (isDisabled) {\n\t\treturn false;\n\t}\n\treturn userValue;\n}\n\n/**\n * @param {Object} changedUserProperties - only includes user properties that were recently changed!\n */\nexport function applyUserProperties(changedUserProperties) {\n\tif (changedUserProperties.hasOwnProperty('clock')) {\n\t\tisDisabled = !changedUserProperties.clock;\n\t}\n\tif (changedUserProperties.hasOwnProperty('clockshadow1')) {\n\t\tuserValue = changedUserProperties.clockshadow1;\n\t}\n}\n",
-				"user" : "clockshadow1",
-				"value" : true
-			}
-		},
-		{
-			"alpha" : 1.0,
-			"anchor" : "none",
-			"angles" : "0.00000 0.00000 0.00000",
-			"backgroundbrightness" : 1.0,
-			"backgroundcolor" : "0.00000 0.00000 0.00000",
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
-			"dependencies" : [ 143 ],
-			"effects" : 
-			[
-				{
-					"file" : "effects/blend/effect.json",
-					"id" : 266,
-					"name" : "Clock Rainbow Angle",
-					"passes" : 
-					[
-						{
-							"constantshadervalues" : 
-							{
-								"multiply" : 1.0
-							},
-							"id" : 267,
-							"textures" : [ null, "_rt_imageLayerComposite_143_a" ]
-						}
-					],
-					"visible" : 
-					{
-						"user" : 
-						{
-							"condition" : "0",
-							"name" : "clockcolor"
-						},
-						"value" : true
-					}
-				}
-			],
-			"font" : "fonts/RazerBlackwidow-Regular.ttf",
-			"horizontalalign" : "center",
-			"id" : 312,
-			"ledsource" : false,
-			"locktransforms" : true,
-			"name" : "Clock",
-			"opaquebackground" : false,
-			"origin" : 
-			{
-				"script" : "'use strict';\nlet originX;\nlet originY;\n/**\n * @param {Vec3} value - for property 'origin'\n */\nexport function update(value) {\n    \n    return new Vec3(originX,originY,value.z);\n}\n\n/**\n * @param {Object} changedUserProperties - only includes user properties that were recently changed!\n */\nexport function applyUserProperties(changedUserProperties) {\n    if (changedUserProperties.clockoriginx != undefined)\n        originX = (engine.screenResolution.x/100)*changedUserProperties.clockoriginx;\n    if (changedUserProperties.clockoriginy != undefined)\n        originY = (engine.screenResolution.y/100)*changedUserProperties.clockoriginy;\n}\n",
-				"value" : "1920.00000 200.00000 0.00000"
-			},
-			"padding" : 32,
-			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
-			"pointsize" : 32.0,
-			"scale" : "1.00000 1.00000 1.00000",
-			"size" : "418.00000 164.00000",
-			"solid" : true,
-			"text" : 
-			{
-				"script" : "'use strict';\n\n\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n\n//No need to register case 0 if that is the font currently set as default (in use).\nlet font0 = engine.registerAsset(\"fonts/RazerF5-Bold.otf\");\nlet font1 = engine.registerAsset(\"fonts/RazerBlackwidow-Regular.ttf\");\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n\n\nexport function applyUserProperties(userProperties) {\n    if(userProperties.hasOwnProperty('clockfont')){\n        switch(userProperties.clockfont){\n\t    case(\"0\"):\n            thisLayer.font = font0;\n            break;\n            case(\"1\"):\n            thisLayer.font = font1;\n            break;\n        }\n    }\n}",
-				"scriptproperties" : 
-				{
-					"delimiter" : ":",
-					"showSeconds" : false,
-					"use24hFormat" : false
-				},
-				"value" : "12:34"
-			},
-			"verticalalign" : "center",
-			"visible" : 
-			{
-				"user" : "clock",
-				"value" : true
-			}
 		}
 	],
 	"version" : 1

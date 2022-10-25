@@ -285,7 +285,7 @@
 			{
 				"index" : 22,
 				"order" : 122,
-				"text" : "Easter Eggs",
+				"text" : "Snow",
 				"type" : "bool",
 				"value" : true
 			}
@@ -293,10 +293,12 @@
 		"supportsaudioprocessing" : true
 	},
 	"preview" : "preview.jpg",
+	"snapshotformat" : -1,
+	"snapshotoverlay" : "",
 	"tags" : [ "Unspecified" ],
 	"title" : "SyndiShanX Custom (Easter)",
 	"type" : "scene",
-	"version" : 6,
+	"version" : 8,
 	"visibility" : "public",
 	"workshopid" : "2796004034",
 	"workshopurl" : "steam://url/CommunityFilePage/2796004034"
