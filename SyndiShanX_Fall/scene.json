@@ -384,6 +384,207 @@
 			"visible" : true
 		},
 		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "fonts/RazerF5-Bold.otf",
+			"horizontalalign" : "center",
+			"id" : 201,
+			"ledsource" : false,
+			"limitrows" : true,
+			"limituseellipsis" : true,
+			"limitwidth" : true,
+			"locktransforms" : true,
+			"maxrows" : 1,
+			"maxwidth" : 1500.0,
+			"name" : "Song Title",
+			"opaquebackground" : false,
+			"origin" : "3275.00000 635.00000 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"pointsize" : 25.0,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2877039332';\n\n/**\n * @param {Vec3} value - for property 'scale'\n * @return {Vec3} - update current property value\n */\nexport function update(value) {\n\treturn value;\n}\n",
+				"value" : "0.50000 0.50000 1.00000"
+			},
+			"size" : "443.00000 100.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2877039332';\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.title;\n}\n",
+				"value" : "Song Title"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "songtitle",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 194,
+			"image" : "models/workshop/2877039332/no_texture_preview.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Song Thumbnail",
+			"origin" : "3270.00000 420.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "0.66500 0.66500 0.00000",
+			"size" : "512.00000 512.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "songthumbnail",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "left",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 173,
+			"image" : "models/r_bar.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Bar Background",
+			"origin" : "3100.00000 235.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "1.32750 0.92000 1.00000",
+			"size" : "256.00000 20.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "songdurationbar",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "right",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/blend/effect.json",
+					"id" : 203,
+					"name" : "Audio Visualizer Rainbow Angle",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"multiply" : 1.0
+							},
+							"id" : 45,
+							"textures" : [ null, "e_bar" ]
+						}
+					],
+					"visible" : 
+					{
+						"user" : 
+						{
+							"condition" : "0",
+							"name" : "audioringcoloroptions"
+						},
+						"value" : true
+					}
+				}
+			],
+			"id" : 199,
+			"image" : "models/util/solidlayer.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Duration Bar",
+			"origin" : "3440.00000 235.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2877039332';\n\nimport * as WEMath from 'WEMath';\n\n//---CHANGEABLE---\n// How far you want the bar to move to the right\nvar scaleX = 1.3275;\n\n//--Global Data--\n// How long media is into the track in seconds\nvar position = 0;\n\n// How long media is in seconds\nvar duration = 0;\n\n// Media is Playing: 1\n// Media is Paused: 2\n// Media is Stopped: 0\nvar currentState = 0;\n\n//----------------------------------------------------------------------------------------------\n// TODO: Deal with user changing the position of the track while playing, so far it \t\t\twill only rescale when paused\n// TODO: Need to find a way to be able to reset engine.runtime\n\n\n/**\n * @param {Vec3} value - for property 'scale'\n * @return {Vec3} - update current property value\n */\nexport function update(value) {\n\t//console.log(engine.runtime);\n\t//console.log(engine.frametime);\n\t\n\t// The bar will move while a song is playing, if paused it will adjust to where the user \t\tmoves the position of the song to \n\tif (currentState == MediaPlaybackEvent.PLAYBACK_PLAYING) {\n\t\t//value = new Vec3((scaleX/position) * engine.runtime, value.y, value.z);\n\t\tvalue = new Vec3(WEMath.smoothStep(duration, 0, position) * scaleX, value.y, value.z)\n\t} else if (currentState == MediaPlaybackEvent.PLAYBACK_PAUSED) {\n\t\t//value = new Vec3((scaleX/duration) * position, value.y, value.z);\n\t\tvalue = new Vec3(WEMath.smoothStep(duration, 0, position) * scaleX, value.y, value.z)\n\t}\n\treturn value;\n}\n\n/**\n * @param {MediaTimelineEvent} event\n */\nexport function mediaTimelineChanged(event) {\n\tposition = event.position;\n\tduration = event.duration;\n}\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tcurrentState = event.state;\n}\n",
+				"value" : "1.32750 0.07225 1.00000"
+			},
+			"size" : "256.00000 256.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "songdurationbar",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "fonts/RazerF5-Bold.otf",
+			"horizontalalign" : "center",
+			"id" : 207,
+			"ledsource" : false,
+			"limitrows" : true,
+			"limituseellipsis" : true,
+			"limitwidth" : true,
+			"locktransforms" : true,
+			"maxrows" : 1,
+			"maxwidth" : 1000.0,
+			"name" : "Artist Name",
+			"opaquebackground" : false,
+			"origin" : "3275.00000 200.00000 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"pointsize" : 25.0,
+			"scale" : "0.50000 0.50000 1.00000",
+			"size" : "527.00000 100.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2877039332';\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.albumArtist;\n}\n",
+				"value" : "Artist Name"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "songartist",
+				"value" : true
+			}
+		},
+		{
 			"alignment" : "center",
 			"alpha" : 1.0,
 			"brightness" : 1.0,

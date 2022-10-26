@@ -1,7 +1,7 @@
 {
 	"approved" : true,
 	"contentrating" : "Everyone",
-	"description" : "SyndiShanX Custom Theme\n\nMildly Customizable, Custom Leaf Particles\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
+	"description" : "SyndiShanX Custom Theme\n\nMildly Customizable, Custom Leaf Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
 	"general" : 
 	{
@@ -234,17 +234,51 @@
 				"text" : "Leaves",
 				"type" : "bool",
 				"value" : true
+			},
+			"songartist" : 
+			{
+				"index" : 21,
+				"order" : 121,
+				"text" : "Song Artist",
+				"type" : "bool",
+				"value" : true
+			},
+			"songdurationbar" : 
+			{
+				"index" : 20,
+				"order" : 120,
+				"text" : "Song Duration Bar",
+				"type" : "bool",
+				"value" : true
+			},
+			"songthumbnail" : 
+			{
+				"index" : 19,
+				"order" : 119,
+				"text" : "Song Thumbnail",
+				"type" : "bool",
+				"value" : true
+			},
+			"songtitle" : 
+			{
+				"index" : 18,
+				"order" : 118,
+				"text" : "Song Title",
+				"type" : "bool",
+				"value" : true
 			}
 		},
-		"supportsaudioprocessing" : true
+		"supportsaudioprocessing" : true,
+		"supportsvideo" : true,
+		"supportsvideoflags" : 2
 	},
 	"preview" : "preview.jpg",
 	"snapshotformat" : -1,
 	"snapshotoverlay" : "",
-	"tags" : [ "Unspecified" ],
+	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom (Fall)",
 	"type" : "scene",
-	"version" : 8,
+	"version" : 10,
 	"visibility" : "public",
 	"workshopid" : "2879962777",
 	"workshopurl" : "steam://url/CommunityFilePage/2879962777"

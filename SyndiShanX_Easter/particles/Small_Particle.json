@@ -53,7 +53,7 @@
 			"distancemin" : 32,
 			"id" : 6,
 			"name" : "sphererandom",
-			"rate" : 20,
+			"rate" : 35,
 			"speedmax" : 100
 		}
 	],
