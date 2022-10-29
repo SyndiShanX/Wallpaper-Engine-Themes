@@ -104,8 +104,9 @@
 			"startvalue" : 0.25
 		},
 		{
+			"force" : "0 0 0.5",
 			"id" : 10,
-			"name" : "oscillateposition"
+			"name" : "angularmovement"
 		}
 	],
 	"renderer" : 

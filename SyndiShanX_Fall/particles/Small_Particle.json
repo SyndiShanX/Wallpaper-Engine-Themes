@@ -102,6 +102,11 @@
 			"id" : 9,
 			"name" : "sizechange",
 			"startvalue" : 0.15000001
+		},
+		{
+			"force" : "0 0 0.5",
+			"id" : 10,
+			"name" : "angularmovement"
 		}
 	],
 	"renderer" : 
