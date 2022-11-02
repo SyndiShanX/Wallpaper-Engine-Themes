@@ -1,7 +1,7 @@
 {
 	"approved" : true,
 	"contentrating" : "Everyone",
-	"description" : "SyndiShanX Custom Theme\n\nMildly Customizable, Custom Snowflake Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
+	"description" : "SyndiShanX Custom Theme\n\nCustomizable, Custom Snowflake Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
 	"general" : 
 	{
@@ -278,7 +278,7 @@
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom (Snow)",
 	"type" : "scene",
-	"version" : 10,
+	"version" : 11,
 	"visibility" : "public",
 	"workshopid" : "2795612085",
 	"workshopurl" : "steam://url/CommunityFilePage/2795612085"
