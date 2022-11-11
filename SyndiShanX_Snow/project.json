@@ -1,7 +1,7 @@
 {
 	"approved" : true,
 	"contentrating" : "Everyone",
-	"description" : "SyndiShanX Custom Theme\n\nCustomizable, Custom Snowflake Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
+	"description" : "SyndiShanX Custom Theme (Snow)\n\nCustomizable, Custom Snowflake Particles\nCustom Swappable XMas Themed Center Image\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
 	"general" : 
 	{
@@ -71,7 +71,7 @@
 			},
 			"centerimage" : 
 			{
-				"index" : 22,
+				"index" : 17,
 				"options" : 
 				[
 					{
@@ -83,7 +83,7 @@
 						"value" : "1"
 					}
 				],
-				"order" : 122,
+				"order" : 117,
 				"text" : "Center Image",
 				"type" : "combo",
 				"value" : "0"
@@ -248,40 +248,40 @@
 			},
 			"snow" : 
 			{
-				"index" : 17,
-				"order" : 117,
+				"index" : 18,
+				"order" : 118,
 				"text" : "Snow",
 				"type" : "bool",
 				"value" : true
 			},
 			"songartist" : 
 			{
-				"index" : 21,
-				"order" : 121,
+				"index" : 22,
+				"order" : 122,
 				"text" : "Song Artist",
 				"type" : "bool",
 				"value" : true
 			},
 			"songdurationbar" : 
 			{
-				"index" : 20,
-				"order" : 120,
+				"index" : 21,
+				"order" : 121,
 				"text" : "Song Duration Bar",
 				"type" : "bool",
 				"value" : true
 			},
 			"songthumbnail" : 
 			{
-				"index" : 19,
-				"order" : 119,
+				"index" : 20,
+				"order" : 120,
 				"text" : "Song Thumbnail",
 				"type" : "bool",
 				"value" : true
 			},
 			"songtitle" : 
 			{
-				"index" : 18,
-				"order" : 118,
+				"index" : 19,
+				"order" : 119,
 				"text" : "Song Title",
 				"type" : "bool",
 				"value" : true
@@ -297,7 +297,7 @@
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom (Snow)",
 	"type" : "scene",
-	"version" : 11,
+	"version" : 13,
 	"visibility" : "public",
 	"workshopid" : "2795612085",
 	"workshopurl" : "steam://url/CommunityFilePage/2795612085"

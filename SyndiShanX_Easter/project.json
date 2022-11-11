@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "SyndiShanX Custom Theme, Easter Edition\n\nCustomizable, Custom Easter Egg Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
+	"description" : "SyndiShanX Custom Theme (Easter)\n\nCustomizable, Custom Easter Egg Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
 	"general" : 
 	{
@@ -277,7 +277,7 @@
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom (Easter)",
 	"type" : "scene",
-	"version" : 12,
+	"version" : 13,
 	"visibility" : "public",
 	"workshopid" : "2796004034",
 	"workshopurl" : "steam://url/CommunityFilePage/2796004034"

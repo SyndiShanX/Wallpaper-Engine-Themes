@@ -1,7 +1,7 @@
 {
 	"approved" : true,
 	"contentrating" : "Everyone",
-	"description" : "SyndiShanX Custom Theme\n\nCustomizable, Custom Leaf Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
+	"description" : "SyndiShanX Custom Theme (Fall)\n\nCustomizable, Custom Leaf Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
 	"general" : 
 	{
@@ -278,7 +278,7 @@
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom (Fall)",
 	"type" : "scene",
-	"version" : 11,
+	"version" : 12,
 	"visibility" : "public",
 	"workshopid" : "2879962777",
 	"workshopurl" : "steam://url/CommunityFilePage/2879962777"
