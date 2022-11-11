@@ -98,10 +98,10 @@
 			"name" : "alphafade"
 		},
 		{
-			"endvalue" : 0.5,
+			"endvalue" : 0.7,
 			"id" : 9,
 			"name" : "sizechange",
-			"startvalue" : 0.15000001
+			"startvalue" : 0.2
 		},
 		{
 			"force" : "0 0 0.5",
