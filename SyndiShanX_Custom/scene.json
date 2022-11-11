@@ -257,7 +257,44 @@
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
 			"solid" : true,
-			"visible" : true
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "centerimage"
+				},
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 187,
+			"image" : "models/Center_Image_XMas.json",
+			"ledsource" : false,
+			"locktransforms" : false,
+			"name" : "Center_Image_XMas",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"perspective" : false,
+			"scale" : "0.75000 0.75000 1.00000",
+			"size" : "1080.00000 1080.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "centerimage"
+				},
+				"value" : false
+			}
 		},
 		{
 			"alignment" : "center",

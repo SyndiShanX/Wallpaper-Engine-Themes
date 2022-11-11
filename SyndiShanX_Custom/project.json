@@ -69,6 +69,25 @@
 				"type" : "slider",
 				"value" : 0.95
 			},
+			"centerimage" : 
+			{
+				"index" : 22,
+				"options" : 
+				[
+					{
+						"label" : "Normal",
+						"value" : "0"
+					},
+					{
+						"label" : "XMas",
+						"value" : "1"
+					}
+				],
+				"order" : 122,
+				"text" : "Center Image",
+				"type" : "combo",
+				"value" : "0"
+			},
 			"cutout" : 
 			{
 				"index" : 4,
