@@ -1,6 +1,7 @@
 {
+	"approved" : true,
 	"contentrating" : "Everyone",
-	"description" : "SyndiShanX Custom Theme (Snow)\n\nCustomizable, Custom Snowflake Particles\nCustom Swappable XMas Themed Center Image\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
+	"description" : "SyndiShanX Custom Theme (Summer)\n\nCustomizable, Custom Grass Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
 	"general" : 
 	{
@@ -294,10 +295,9 @@
 	"snapshotformat" : -1,
 	"snapshotoverlay" : "",
 	"tags" : [ "Music" ],
-	"title" : "SyndiShanX Custom (Snow)",
-	"type" : "Scene",
-	"version" : 14,
-	"visibility" : "public",
-	"workshopid" : "2795612085",
-	"workshopurl" : "steam://url/CommunityFilePage/2795612085"
+	"title" : "SyndiShanX Custom (Summer)",
+	"type" : "scene",
+	"version" : 15,
+	"workshopid" : "2965017537",
+	"workshopurl" : "steam://url/CommunityFilePage/2965017537"
 }
