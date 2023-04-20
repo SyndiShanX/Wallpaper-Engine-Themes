@@ -250,7 +250,7 @@
 			{
 				"index" : 18,
 				"order" : 118,
-				"text" : "Snow",
+				"text" : "Grass",
 				"type" : "bool",
 				"value" : true
 			},
@@ -297,7 +297,8 @@
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom (Summer)",
 	"type" : "scene",
-	"version" : 15,
+	"version" : 16,
+	"visibility" : "public",
 	"workshopid" : "2965017537",
 	"workshopurl" : "steam://url/CommunityFilePage/2965017537"
 }
