@@ -1,5 +1,4 @@
 {
-	"approved" : true,
 	"contentrating" : "Everyone",
 	"description" : "SyndiShanX Custom Theme (Summer)\n\nCustomizable, Custom Grass Particles\n\nMedia Player Display in the Bottom Right Corner\n\nCircular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
@@ -296,8 +295,8 @@
 	"snapshotoverlay" : "",
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom (Summer)",
-	"type" : "scene",
-	"version" : 16,
+	"type" : "Scene",
+	"version" : 18,
 	"visibility" : "public",
 	"workshopid" : "2965017537",
 	"workshopurl" : "steam://url/CommunityFilePage/2965017537"
