@@ -332,6 +332,7 @@
 	"title" : "SyndiShanX Custom",
 	"type" : "scene",
 	"version" : 1,
+	"visibility" : "public",
 	"workshopid" : "2990493945",
 	"workshopurl" : "steam://url/CommunityFilePage/2990493945"
 }
