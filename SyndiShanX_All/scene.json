@@ -73,7 +73,6 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
@@ -108,21 +107,16 @@
 			],
 			"id" : 143,
 			"image" : "models/workshop/2093591151/r_angle.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Rainbow Angle",
 			"origin" : "200.00000 200.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
-			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "256.00000 256.00000",
-			"solid" : true,
-			"visible" : true
+			"solid" : true
 		},
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 
 			{
 				"user" : "backgroundhdr",
@@ -137,13 +131,9 @@
 			"copybackground" : true,
 			"id" : 21,
 			"image" : "models/util/solidlayer.json",
-			"ledsource" : false,
-			"locktransforms" : false,
 			"name" : "Background",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
-			"scale" : "1.00000 1.00000 1.00000",
 			"size" : "3840.00000 2160.00000",
 			"solid" : true,
 			"visible" : false
@@ -151,7 +141,6 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
@@ -179,19 +168,15 @@
 			],
 			"id" : 91,
 			"image" : "models/Background.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Background",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "55.00000 31.00000 1.00000",
 			"size" : "70.00000 70.00000",
-			"solid" : true,
-			"visible" : true
+			"solid" : true
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 109,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -199,7 +184,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Easter_Small.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -211,7 +195,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 171,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -219,19 +202,17 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Summer_Small.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
 				{
-					"condition" : "2",
+					"condition" : "1",
 					"name" : "particles"
 				},
-				"value" : false
+				"value" : true
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 175,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -239,7 +220,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Fall_Small.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -251,7 +231,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 178,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -259,7 +238,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Snow_Small.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -271,7 +249,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 215,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -279,7 +256,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Easter_Medium.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -291,7 +267,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 182,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -299,7 +274,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Summer_Medium.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -311,7 +285,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 188,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -319,7 +292,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Fall_Medium.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -331,7 +303,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 193,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -339,7 +310,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Snow_Medium.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -351,7 +321,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 179,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -359,7 +328,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Easter_Large.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -371,7 +339,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 197,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -379,7 +346,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Summer_Large.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -391,7 +357,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 202,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -399,7 +364,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Fall_Large.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -411,7 +375,6 @@
 			}
 		},
 		{
-			"angles" : "0.00000 0.00000 0.00000",
 			"id" : 208,
 			"instanceoverride" : null,
 			"locktransforms" : true,
@@ -419,7 +382,6 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Snow_Large.json",
-			"scale" : "1.00000 1.00000 1.00000",
 			"visible" : 
 			{
 				"user" : 
@@ -433,19 +395,16 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
 			"id" : 221,
 			"image" : "models/Normal.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Logo (Normal)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
 			"solid" : true,
@@ -462,19 +421,16 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
 			"id" : 234,
 			"image" : "models/Summer.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Logo (Summer)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
 			"solid" : true,
@@ -491,19 +447,16 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
 			"id" : 238,
 			"image" : "models/Fall.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Logo (Fall)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
 			"solid" : true,
@@ -520,19 +473,16 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
 			"id" : 244,
 			"image" : "models/Snow.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Logo (Snow)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
 			"solid" : true,
@@ -549,7 +499,6 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
@@ -659,21 +608,17 @@
 			],
 			"id" : 237,
 			"image" : "models/util/composelayer.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Audio Visualizer",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "1.05000 1.05000 1.00000",
 			"size" : "2048.00000 2048.00000",
-			"solid" : true,
-			"visible" : true
+			"solid" : true
 		},
 		{
 			"alpha" : 1.0,
 			"anchor" : "none",
-			"angles" : "0.00000 0.00000 0.00000",
 			"backgroundbrightness" : 1.0,
 			"backgroundcolor" : "0.00000 0.00000 0.00000",
 			"blockalign" : false,
@@ -684,7 +629,6 @@
 			"font" : "fonts/RazerF5-Bold.otf",
 			"horizontalalign" : "center",
 			"id" : 201,
-			"ledsource" : false,
 			"limitrows" : true,
 			"limituseellipsis" : true,
 			"limitwidth" : true,
@@ -696,7 +640,6 @@
 			"origin" : "3275.00000 635.00000 0.00000",
 			"padding" : 32,
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"pointsize" : 25.0,
 			"scale" : 
 			{
@@ -720,19 +663,16 @@
 		{
 			"alignment" : "center",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
 			"id" : 194,
 			"image" : "models/workshop/2877039332/no_texture_preview.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Song Thumbnail",
 			"origin" : "3270.00000 420.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "0.66500 0.66500 0.00000",
 			"size" : "512.00000 512.00000",
 			"solid" : true,
@@ -745,19 +685,16 @@
 		{
 			"alignment" : "left",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
 			"copybackground" : true,
 			"id" : 173,
 			"image" : "models/r_bar.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Bar Background",
 			"origin" : "3100.00000 235.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : "1.32750 0.92000 1.00000",
 			"size" : "256.00000 20.00000",
 			"solid" : true,
@@ -770,7 +707,6 @@
 		{
 			"alignment" : "right",
 			"alpha" : 1.0,
-			"angles" : "0.00000 0.00000 0.00000",
 			"brightness" : 1.0,
 			"color" : "1.00000 1.00000 1.00000",
 			"colorBlendMode" : 0,
@@ -792,7 +728,7 @@
 							{
 								"multiply" : 1.0
 							},
-							"id" : 45,
+							"id" : 86,
 							"textures" : [ null, "e_bar" ]
 						}
 					],
@@ -809,12 +745,10 @@
 			],
 			"id" : 199,
 			"image" : "models/util/solidlayer.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Duration Bar",
 			"origin" : "3440.00000 235.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"scale" : 
 			{
 				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2877039332';\n\nimport * as WEMath from 'WEMath';\n\n//---CHANGEABLE---\n// How far you want the bar to move to the right\nvar scaleX = 1.3275;\n\n//--Global Data--\n// How long media is into the track in seconds\nvar position = 0;\n\n// How long media is in seconds\nvar duration = 0;\n\n// Media is Playing: 1\n// Media is Paused: 2\n// Media is Stopped: 0\nvar currentState = 0;\n\n//----------------------------------------------------------------------------------------------\n// TODO: Deal with user changing the position of the track while playing, so far it \t\t\twill only rescale when paused\n// TODO: Need to find a way to be able to reset engine.runtime\n\n\n/**\n * @param {Vec3} value - for property 'scale'\n * @return {Vec3} - update current property value\n */\nexport function update(value) {\n\t//console.log(engine.runtime);\n\t//console.log(engine.frametime);\n\t\n\t// The bar will move while a song is playing, if paused it will adjust to where the user \t\tmoves the position of the song to \n\tif (currentState == MediaPlaybackEvent.PLAYBACK_PLAYING) {\n\t\t//value = new Vec3((scaleX/position) * engine.runtime, value.y, value.z);\n\t\tvalue = new Vec3(WEMath.smoothStep(duration, 0, position) * scaleX, value.y, value.z)\n\t} else if (currentState == MediaPlaybackEvent.PLAYBACK_PAUSED) {\n\t\t//value = new Vec3((scaleX/duration) * position, value.y, value.z);\n\t\tvalue = new Vec3(WEMath.smoothStep(duration, 0, position) * scaleX, value.y, value.z)\n\t}\n\treturn value;\n}\n\n/**\n * @param {MediaTimelineEvent} event\n */\nexport function mediaTimelineChanged(event) {\n\tposition = event.position;\n\tduration = event.duration;\n}\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tcurrentState = event.state;\n}\n",
@@ -831,7 +765,6 @@
 		{
 			"alpha" : 1.0,
 			"anchor" : "none",
-			"angles" : "0.00000 0.00000 0.00000",
 			"backgroundbrightness" : 1.0,
 			"backgroundcolor" : "0.00000 0.00000 0.00000",
 			"blockalign" : false,
@@ -842,7 +775,6 @@
 			"font" : "fonts/RazerF5-Bold.otf",
 			"horizontalalign" : "center",
 			"id" : 207,
-			"ledsource" : false,
 			"limitrows" : true,
 			"limituseellipsis" : true,
 			"limitwidth" : true,
@@ -854,7 +786,6 @@
 			"origin" : "3275.00000 200.00000 0.00000",
 			"padding" : 32,
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
 			"pointsize" : 25.0,
 			"scale" : "0.50000 0.50000 1.00000",
 			"size" : "527.00000 100.00000",
@@ -935,13 +866,10 @@
 			],
 			"id" : 186,
 			"image" : "models/util/fullscreenlayer.json",
-			"ledsource" : false,
 			"locktransforms" : true,
 			"name" : "Vignette",
 			"parallaxDepth" : "0.00000 0.00000",
-			"perspective" : false,
-			"solid" : true,
-			"visible" : true
+			"solid" : true
 		}
 	],
 	"version" : 1

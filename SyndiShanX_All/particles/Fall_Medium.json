@@ -81,7 +81,7 @@
 		}
 	],
 	"material" : "materials/particle/Fall_Medium.json",
-	"maxcount" : 150,
+	"maxcount" : 75,
 	"operator" : 
 	[
 		{

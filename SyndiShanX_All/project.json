@@ -326,12 +326,14 @@
 		"supportsvideoflags" : 2
 	},
 	"preview" : "preview.jpg",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
 	"snapshotformat" : -1,
 	"snapshotoverlay" : "",
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom",
-	"type" : "scene",
-	"version" : 1,
+	"type" : "Scene",
+	"version" : 2,
 	"visibility" : "public",
 	"workshopid" : "2990493945",
 	"workshopurl" : "steam://url/CommunityFilePage/2990493945"
