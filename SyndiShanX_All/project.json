@@ -9,10 +9,10 @@
 			"audiospin" : 
 			{
 				"fraction" : true,
-				"index" : 3,
+				"index" : 4,
 				"max" : 3,
 				"min" : 0,
-				"order" : 103,
+				"order" : 104,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Audio Spin Speed",
@@ -22,8 +22,8 @@
 			"backgroundcolor" : 
 			{
 				"condition" : "razerbackgrounds.value==3",
-				"index" : 1,
-				"order" : 101,
+				"index" : 2,
+				"order" : 102,
 				"text" : "Background Color",
 				"type" : "color",
 				"value" : "0.1568627450980392 0.1568627450980392 0.15294117647058825"
@@ -32,10 +32,10 @@
 			{
 				"condition" : "razerbackgrounds.value==3",
 				"fraction" : true,
-				"index" : 0,
+				"index" : 1,
 				"max" : 1,
 				"min" : 0,
-				"order" : 100,
+				"order" : 101,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Background HDR",
@@ -45,10 +45,10 @@
 			"bloomstrength" : 
 			{
 				"fraction" : true,
-				"index" : 11,
+				"index" : 14,
 				"max" : 5,
 				"min" : 0,
-				"order" : 111,
+				"order" : 114,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Bloom Strength",
@@ -58,10 +58,10 @@
 			"bloomthreshold" : 
 			{
 				"fraction" : true,
-				"index" : 12,
+				"index" : 15,
 				"max" : 1,
 				"min" : 0,
-				"order" : 112,
+				"order" : 115,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "Bloom Threshold",
@@ -70,68 +70,58 @@
 			},
 			"centerimage" : 
 			{
-				"index" : 17,
+				"index" : 22,
 				"options" : 
 				[
 					{
-						"label" : "Normal",
+						"label" : "None",
 						"value" : "0"
 					},
 					{
-						"label" : "Summer",
+						"label" : "Normal",
 						"value" : "1"
 					},
 					{
-						"label" : "Fall",
+						"label" : "Spring",
 						"value" : "2"
 					},
 					{
-						"label" : "Snow",
+						"label" : "Summer",
 						"value" : "3"
 					},
 					{
-						"label" : "None",
-						"value" : "99"
+						"label" : "Fall",
+						"value" : "4"
+					},
+					{
+						"label" : "Snow",
+						"value" : "5"
 					}
 				],
-				"order" : 117,
+				"order" : 122,
 				"text" : "Center Image",
 				"type" : "combo",
-				"value" : "1"
+				"value" : "5"
 			},
 			"cutout" : 
 			{
-				"index" : 4,
-				"order" : 104,
-				"text" : "Cutout",
+				"index" : 6,
+				"order" : 106,
+				"text" : "Vignette",
 				"type" : "bool",
 				"value" : true
 			},
 			"cutoutcolor" : 
 			{
 				"condition" : "cutout.value",
-				"index" : 7,
-				"order" : 107,
-				"text" : "Cutout Color",
+				"index" : 9,
+				"order" : 109,
+				"text" : "Vignette Color",
 				"type" : "color",
 				"value" : "0.03529411764705882 0.03529411764705882 0.03529411764705882"
 			},
 			"cutoutgradientvalue2" : 
 			{
-				"fraction" : true,
-				"index" : 6,
-				"max" : 1,
-				"min" : 0,
-				"order" : 106,
-				"precision" : 2,
-				"step" : 0.1,
-				"text" : "Cutout Gradient Value 2",
-				"type" : "slider",
-				"value" : 0.9
-			},
-			"cutoutopacity" : 
-			{
-				"condition" : "cutout.value",
 				"fraction" : true,
 				"index" : 8,
 				"max" : 1,
@@ -139,7 +129,21 @@
 				"order" : 108,
 				"precision" : 2,
 				"step" : 0.1,
-				"text" : "Cutout Opacity",
+				"text" : "Vignette Gradient Value 2",
+				"type" : "slider",
+				"value" : 0.9
+			},
+			"cutoutopacity" : 
+			{
+				"condition" : "cutout.value",
+				"fraction" : true,
+				"index" : 10,
+				"max" : 1,
+				"min" : 0,
+				"order" : 110,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Vignette Opacity",
 				"type" : "slider",
 				"value" : 0.5
 			},
@@ -147,13 +151,13 @@
 			{
 				"condition" : "cutout.value",
 				"fraction" : true,
-				"index" : 9,
+				"index" : 11,
 				"max" : 8,
 				"min" : 0.1,
-				"order" : 109,
+				"order" : 111,
 				"precision" : 3,
 				"step" : 0.01,
-				"text" : "Cutout Scale",
+				"text" : "Vignette Scale",
 				"type" : "slider",
 				"value" : 0.1
 			},
@@ -161,36 +165,36 @@
 			{
 				"condition" : "cutout.value",
 				"fraction" : true,
-				"index" : 10,
+				"index" : 12,
 				"max" : 1,
 				"min" : -1,
-				"order" : 110,
+				"order" : 112,
 				"precision" : 3,
 				"step" : 0.01,
-				"text" : "Cutout Skew",
+				"text" : "Vignette Skew",
 				"type" : "slider",
 				"value" : 1
 			},
 			"cutoutstrengthvalue1" : 
 			{
 				"fraction" : true,
-				"index" : 5,
+				"index" : 7,
 				"max" : 1,
 				"min" : 0,
-				"order" : 105,
+				"order" : 107,
 				"precision" : 2,
 				"step" : 0.1,
-				"text" : "Cutout Gradient Value 1",
+				"text" : "Vignette Gradient Value 1",
 				"type" : "slider",
 				"value" : 0.1
 			},
 			"hdrscatter" : 
 			{
 				"fraction" : true,
-				"index" : 14,
+				"index" : 19,
 				"max" : 2,
 				"min" : 0,
-				"order" : 114,
+				"order" : 119,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "HDR Scatter",
@@ -200,10 +204,10 @@
 			"hdrstrength" : 
 			{
 				"fraction" : true,
-				"index" : 13,
+				"index" : 17,
 				"max" : 10,
 				"min" : 0,
-				"order" : 113,
+				"order" : 117,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "HDR Strength",
@@ -213,10 +217,10 @@
 			"hdrthreshold" : 
 			{
 				"fraction" : true,
-				"index" : 15,
+				"index" : 18,
 				"max" : 1,
 				"min" : 0,
-				"order" : 115,
+				"order" : 118,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "HDR Threshold",
@@ -226,10 +230,10 @@
 			"hdrthresholdsmoothing" : 
 			{
 				"fraction" : true,
-				"index" : 16,
+				"index" : 20,
 				"max" : 1,
 				"min" : 0,
-				"order" : 116,
+				"order" : 120,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "HDR Threshold Smoothing",
@@ -238,42 +242,42 @@
 			},
 			"particles" : 
 			{
-				"index" : 18,
+				"index" : 23,
 				"options" : 
 				[
 					{
-						"label" : "Easter",
+						"label" : "None",
 						"value" : "0"
 					},
 					{
-						"label" : "Summer",
+						"label" : "Spring",
 						"value" : "1"
 					},
 					{
-						"label" : "Fall",
+						"label" : "Summer",
 						"value" : "2"
 					},
 					{
-						"label" : "Snow",
+						"label" : "Fall",
 						"value" : "3"
 					},
 					{
-						"label" : "None",
-						"value" : "99"
+						"label" : "Snow",
+						"value" : "4"
 					}
 				],
-				"order" : 118,
+				"order" : 123,
 				"text" : "Particles",
 				"type" : "combo",
-				"value" : "1"
+				"value" : "4"
 			},
 			"playbackrate" : 
 			{
 				"fraction" : true,
-				"index" : 2,
+				"index" : 3,
 				"max" : 3,
 				"min" : 0,
-				"order" : 102,
+				"order" : 103,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Color Spin Speed",
@@ -288,34 +292,90 @@
 				"type" : "color",
 				"value" : "0.1568627450980392 0.1568627450980392 0.15294117647058825"
 			},
+			"separator_1" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "<img src='https://syndishanx.github.io/Website/Downloads/Misc/Rainbow_Bar_Anim.gif'>",
+				"type" : "text",
+				"value" : false
+			},
+			"separator_2" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "<img src='https://syndishanx.github.io/Website/Downloads/Misc/Rainbow_Bar_Anim.gif'>",
+				"type" : "text",
+				"value" : false
+			},
+			"separator_3" : 
+			{
+				"index" : 13,
+				"order" : 113,
+				"text" : "<img src='https://syndishanx.github.io/Website/Downloads/Misc/Rainbow_Bar_Anim.gif'>",
+				"type" : "text",
+				"value" : false
+			},
+			"separator_4" : 
+			{
+				"index" : 16,
+				"order" : 116,
+				"text" : "<img src='https://syndishanx.github.io/Website/Downloads/Misc/Rainbow_Bar_Anim.gif'>",
+				"type" : "text",
+				"value" : false
+			},
+			"separator_5" : 
+			{
+				"index" : 21,
+				"order" : 121,
+				"text" : "<img src='https://syndishanx.github.io/Website/Downloads/Misc/Rainbow_Bar_Anim.gif'>",
+				"type" : "text",
+				"value" : false
+			},
+			"separator_6" : 
+			{
+				"index" : 24,
+				"order" : 124,
+				"text" : "<img src='https://syndishanx.github.io/Website/Downloads/Misc/Rainbow_Bar_Anim.gif'>",
+				"type" : "text",
+				"value" : false
+			},
+			"separator_7" : 
+			{
+				"index" : 29,
+				"order" : 129,
+				"text" : "<img src='https://syndishanx.github.io/Website/Downloads/Misc/Rainbow_Bar_Anim.gif'>",
+				"type" : "text",
+				"value" : false
+			},
 			"songartist" : 
 			{
-				"index" : 22,
-				"order" : 122,
+				"index" : 28,
+				"order" : 128,
 				"text" : "Song Artist",
 				"type" : "bool",
 				"value" : false
 			},
 			"songdurationbar" : 
 			{
-				"index" : 21,
-				"order" : 121,
+				"index" : 27,
+				"order" : 127,
 				"text" : "Song Duration Bar",
 				"type" : "bool",
 				"value" : false
 			},
 			"songthumbnail" : 
 			{
-				"index" : 20,
-				"order" : 120,
+				"index" : 26,
+				"order" : 126,
 				"text" : "Song Thumbnail",
 				"type" : "bool",
 				"value" : false
 			},
 			"songtitle" : 
 			{
-				"index" : 19,
-				"order" : 119,
+				"index" : 25,
+				"order" : 125,
 				"text" : "Song Title",
 				"type" : "bool",
 				"value" : false
@@ -332,8 +392,8 @@
 	"snapshotoverlay" : "",
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom",
-	"type" : "Scene",
-	"version" : 2,
+	"type" : "scene",
+	"version" : 3,
 	"visibility" : "public",
 	"workshopid" : "2990493945",
 	"workshopurl" : "steam://url/CommunityFilePage/2990493945"

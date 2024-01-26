@@ -80,8 +80,8 @@
 			"name" : "colorrandom"
 		}
 	],
-	"material" : "materials/particle/Easter_Large.json",
-	"maxcount" : 150,
+	"material" : "materials/particle/Fall_Small_1.json",
+	"maxcount" : 75,
 	"operator" : 
 	[
 		{
@@ -94,10 +94,10 @@
 			"name" : "alphafade"
 		},
 		{
-			"endvalue" : 0.75,
+			"endvalue" : 0.5,
 			"id" : 9,
 			"name" : "sizechange",
-			"startvalue" : 0.25
+			"startvalue" : 0.15000001
 		},
 		{
 			"force" : "0 0 0.5",

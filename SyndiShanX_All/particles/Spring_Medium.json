@@ -80,8 +80,8 @@
 			"name" : "colorrandom"
 		}
 	],
-	"material" : "materials/particle/Easter_Medium.json",
-	"maxcount" : 150,
+	"material" : "materials/particle/Fall_Medium_1.json",
+	"maxcount" : 75,
 	"operator" : 
 	[
 		{

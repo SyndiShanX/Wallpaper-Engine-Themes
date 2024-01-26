@@ -12,7 +12,7 @@
 			"depthtest" : "disabled",
 			"depthwrite" : "disabled",
 			"shader" : "genericparticle",
-			"textures" : [ "particle/Easter_Small" ]
+			"textures" : [ "particle/Spring_Medium" ]
 		}
 	]
 }

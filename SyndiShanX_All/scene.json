@@ -180,15 +180,15 @@
 			"id" : 109,
 			"instanceoverride" : null,
 			"locktransforms" : true,
-			"name" : "Small Particles (Easter)",
+			"name" : "Small Particles (Spring)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"particle" : "particles/Easter_Small.json",
+			"particle" : "particles/Spring_Small.json",
 			"visible" : 
 			{
 				"user" : 
 				{
-					"condition" : "0",
+					"condition" : "1",
 					"name" : "particles"
 				},
 				"value" : false
@@ -206,10 +206,10 @@
 			{
 				"user" : 
 				{
-					"condition" : "1",
+					"condition" : "2",
 					"name" : "particles"
 				},
-				"value" : true
+				"value" : false
 			}
 		},
 		{
@@ -224,7 +224,7 @@
 			{
 				"user" : 
 				{
-					"condition" : "2",
+					"condition" : "3",
 					"name" : "particles"
 				},
 				"value" : false
@@ -242,25 +242,25 @@
 			{
 				"user" : 
 				{
-					"condition" : "3",
+					"condition" : "4",
 					"name" : "particles"
 				},
-				"value" : false
+				"value" : true
 			}
 		},
 		{
 			"id" : 215,
 			"instanceoverride" : null,
 			"locktransforms" : true,
-			"name" : "Medium Particles (Easter)",
+			"name" : "Medium Particles (Spring)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"particle" : "particles/Easter_Medium.json",
+			"particle" : "particles/Spring_Medium.json",
 			"visible" : 
 			{
 				"user" : 
 				{
-					"condition" : "0",
+					"condition" : "1",
 					"name" : "particles"
 				},
 				"value" : false
@@ -278,10 +278,10 @@
 			{
 				"user" : 
 				{
-					"condition" : "1",
+					"condition" : "2",
 					"name" : "particles"
 				},
-				"value" : true
+				"value" : false
 			}
 		},
 		{
@@ -296,7 +296,7 @@
 			{
 				"user" : 
 				{
-					"condition" : "2",
+					"condition" : "3",
 					"name" : "particles"
 				},
 				"value" : false
@@ -314,25 +314,25 @@
 			{
 				"user" : 
 				{
-					"condition" : "3",
+					"condition" : "4",
 					"name" : "particles"
 				},
-				"value" : false
+				"value" : true
 			}
 		},
 		{
 			"id" : 179,
 			"instanceoverride" : null,
 			"locktransforms" : true,
-			"name" : "Large Particles (Easter)",
+			"name" : "Large Particles (Spring)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"particle" : "particles/Easter_Large.json",
+			"particle" : "particles/Spring_Large.json",
 			"visible" : 
 			{
 				"user" : 
 				{
-					"condition" : "0",
+					"condition" : "1",
 					"name" : "particles"
 				},
 				"value" : false
@@ -350,10 +350,10 @@
 			{
 				"user" : 
 				{
-					"condition" : "1",
+					"condition" : "2",
 					"name" : "particles"
 				},
-				"value" : true
+				"value" : false
 			}
 		},
 		{
@@ -368,7 +368,7 @@
 			{
 				"user" : 
 				{
-					"condition" : "2",
+					"condition" : "3",
 					"name" : "particles"
 				},
 				"value" : false
@@ -386,10 +386,10 @@
 			{
 				"user" : 
 				{
-					"condition" : "3",
+					"condition" : "4",
 					"name" : "particles"
 				},
-				"value" : false
+				"value" : true
 			}
 		},
 		{
@@ -412,7 +412,7 @@
 			{
 				"user" : 
 				{
-					"condition" : "0",
+					"condition" : "1",
 					"name" : "centerimage"
 				},
 				"value" : false
@@ -426,6 +426,32 @@
 			"colorBlendMode" : 0,
 			"copybackground" : true,
 			"id" : 234,
+			"image" : "models/Spring.json",
+			"locktransforms" : true,
+			"name" : "Logo (Spring)",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"scale" : "0.75000 0.75000 1.00000",
+			"size" : "1080.00000 1080.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "2",
+					"name" : "centerimage"
+				},
+				"value" : false
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 333,
 			"image" : "models/Summer.json",
 			"locktransforms" : true,
 			"name" : "Logo (Summer)",
@@ -438,10 +464,10 @@
 			{
 				"user" : 
 				{
-					"condition" : "1",
+					"condition" : "3",
 					"name" : "centerimage"
 				},
-				"value" : true
+				"value" : false
 			}
 		},
 		{
@@ -464,7 +490,7 @@
 			{
 				"user" : 
 				{
-					"condition" : "2",
+					"condition" : "4",
 					"name" : "centerimage"
 				},
 				"value" : false
@@ -490,10 +516,10 @@
 			{
 				"user" : 
 				{
-					"condition" : "3",
+					"condition" : "5",
 					"name" : "centerimage"
 				},
-				"value" : false
+				"value" : true
 			}
 		},
 		{
@@ -728,7 +754,7 @@
 							{
 								"multiply" : 1.0
 							},
-							"id" : 86,
+							"id" : 88,
 							"textures" : [ null, "e_bar" ]
 						}
 					],
@@ -828,7 +854,7 @@
 								"Cutout Color" : 
 								{
 									"user" : "cutoutcolor",
-									"value" : "0.21176 0.21176 0.21569"
+									"value" : "0.03529 0.03529 0.03529"
 								},
 								"Cutout Gradient Value 1 (Fade = 0.1)" : 
 								{
