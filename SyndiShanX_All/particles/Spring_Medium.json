@@ -51,7 +51,7 @@
 			"id" : 6,
 			"name" : "sphererandom",
 			"origin" : "-50 0 0",
-			"rate" : 35
+			"rate" : 40
 		}
 	],
 	"initializer" : 
@@ -81,7 +81,7 @@
 		}
 	],
 	"material" : "materials/particle/Fall_Medium_1.json",
-	"maxcount" : 75,
+	"maxcount" : 100,
 	"operator" : 
 	[
 		{

@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "SyndiShanX Custom Theme\n\nCustomizable, Custom Swappable Particles\nCustom Swappable Themed Center Image\n\nTogglable Media Player Display in the Bottom Right Corner\n\nTogglable Circular Audio Visualizer around the Logo\n\nTheme Source on Github: (https://github.com/SyndiShanX/Wallpaper-Engine-Themes)\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
+	"description" : "SyndiShanX's Custom Theme\n\nCustomizable, Custom Swappable Particles\nCustom Swappable Themed Center Image\n\nTogglable Media Player Display in the Bottom Right Corner\n\nTogglable Circular Audio Visualizer around the Logo\n\nTheme Source on Github: https://github.com/SyndiShanX/Wallpaper-Engine-Themes\n\nWorks well on 1920x1080 as well as 3840x2160\n\nCredits:\nOMGParticles - Simple Audio Bars\nfug4life - Cutout Vignette, and LED/Blend Layer Effects Pack",
 	"file" : "scene.json",
 	"general" : 
 	{
@@ -53,7 +53,7 @@
 				"step" : 0.1,
 				"text" : "Bloom Strength",
 				"type" : "slider",
-				"value" : 1
+				"value" : 4
 			},
 			"bloomthreshold" : 
 			{
@@ -66,7 +66,7 @@
 				"step" : 0.01,
 				"text" : "Bloom Threshold",
 				"type" : "slider",
-				"value" : 0.95
+				"value" : 0.85
 			},
 			"centerimage" : 
 			{
@@ -122,6 +122,7 @@
 			},
 			"cutoutgradientvalue2" : 
 			{
+				"condition" : "cutout.value",
 				"fraction" : true,
 				"index" : 8,
 				"max" : 1,
@@ -177,6 +178,7 @@
 			},
 			"cutoutstrengthvalue1" : 
 			{
+				"condition" : "cutout.value",
 				"fraction" : true,
 				"index" : 7,
 				"max" : 1,
@@ -393,7 +395,7 @@
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom",
 	"type" : "scene",
-	"version" : 3,
+	"version" : 7,
 	"visibility" : "public",
 	"workshopid" : "2990493945",
 	"workshopurl" : "steam://url/CommunityFilePage/2990493945"

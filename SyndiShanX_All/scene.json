@@ -33,12 +33,12 @@
 		"bloomstrength" : 
 		{
 			"user" : "bloomstrength",
-			"value" : 1.0
+			"value" : 4.0
 		},
 		"bloomthreshold" : 
 		{
 			"user" : "bloomthreshold",
-			"value" : 0.94999999
+			"value" : 0.85000002
 		},
 		"camerafade" : true,
 		"cameraparallax" : 
