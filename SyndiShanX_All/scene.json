@@ -1,8 +1,8 @@
 {
 	"camera" : 
 	{
-		"center" : "0.00000 0.00000 -1.00000",
-		"eye" : "0.00000 0.00000 0.00000",
+		"center" : "1369.07812 -672.67535 -1.00000",
+		"eye" : "1369.07812 -672.67535 0.00000",
 		"up" : "0.00000 1.00000 0.00000"
 	},
 	"general" : 
@@ -40,6 +40,7 @@
 			"user" : "bloomthreshold",
 			"value" : 0.85000002
 		},
+		"bloomtint" : "1.00000 1.00000 1.00000",
 		"camerafade" : true,
 		"cameraparallax" : 
 		{
@@ -58,6 +59,8 @@
 		"clearenabled" : true,
 		"farz" : 10000.0,
 		"fov" : 50.0,
+		"gravitydirection" : "0.00000 -1.00000 0.00000",
+		"gravitystrength" : 1.0,
 		"hdr" : true,
 		"nearz" : 0.0099999998,
 		"orthogonalprojection" : 
@@ -65,18 +68,19 @@
 			"height" : 2160,
 			"width" : 3840
 		},
+		"perspectiveoverridefov" : 95.0,
 		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"winddirection" : "0.70700 0.70700 0.00000",
+		"windenabled" : false,
+		"windstrength" : 1.0,
 		"zoom" : 1.0
 	},
 	"objects" : 
 	[
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"effects" : 
 			[
 				{
@@ -111,40 +115,34 @@
 			"name" : "Rainbow Angle",
 			"origin" : "200.00000 200.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
-			"size" : "256.00000 256.00000",
-			"solid" : true
+			"size" : "256.00000 256.00000"
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
 			"brightness" : 
 			{
 				"user" : "backgroundhdr",
 				"value" : 1.0
 			},
+			"castshadow" : false,
+			"clampuvs" : true,
 			"color" : 
 			{
 				"user" : "backgroundcolor",
 				"value" : "0.15686 0.15686 0.15294"
 			},
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"disablepropagation" : false,
 			"id" : 21,
 			"image" : "models/util/solidlayer.json",
 			"name" : "Background",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"size" : "3840.00000 2160.00000",
-			"solid" : true,
 			"visible" : false
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"effects" : 
 			[
 				{
@@ -173,17 +171,17 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "55.00000 31.00000 1.00000",
-			"size" : "70.00000 70.00000",
-			"solid" : true
+			"size" : "70.00000 70.00000"
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 109,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Small Particles (Spring)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Spring_Small.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -195,13 +193,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 171,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Small Particles (Summer)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Summer_Small.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -213,13 +212,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 175,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Small Particles (Fall)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Fall_Small.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -231,13 +231,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 178,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Small Particles (Snow)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Snow_Small.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -249,13 +250,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 215,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Medium Particles (Spring)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Spring_Medium.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -267,13 +269,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 182,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Medium Particles (Summer)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Summer_Medium.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -285,13 +288,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 188,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Medium Particles (Fall)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Fall_Medium.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -303,13 +307,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 193,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Medium Particles (Snow)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Snow_Medium.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -321,13 +326,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 179,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Large Particles (Spring)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Spring_Large.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -339,13 +345,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 197,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Large Particles (Summer)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Summer_Large.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -357,13 +364,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 202,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Large Particles (Fall)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Fall_Large.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -375,13 +383,14 @@
 			}
 		},
 		{
+			"disablepropagation" : false,
 			"id" : 208,
-			"instanceoverride" : null,
 			"locktransforms" : true,
 			"name" : "Large Particles (Snow)",
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"particle" : "particles/Snow_Large.json",
+			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -393,12 +402,9 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 221,
 			"image" : "models/Normal.json",
 			"locktransforms" : true,
@@ -407,7 +413,6 @@
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -419,12 +424,9 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 234,
 			"image" : "models/Spring.json",
 			"locktransforms" : true,
@@ -433,7 +435,6 @@
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -445,12 +446,9 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 333,
 			"image" : "models/Summer.json",
 			"locktransforms" : true,
@@ -459,7 +457,6 @@
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -471,12 +468,9 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 238,
 			"image" : "models/Fall.json",
 			"locktransforms" : true,
@@ -485,7 +479,6 @@
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -497,12 +490,9 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 244,
 			"image" : "models/Snow.json",
 			"locktransforms" : true,
@@ -511,7 +501,6 @@
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "0.75000 0.75000 1.00000",
 			"size" : "1080.00000 1080.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : 
@@ -523,17 +512,15 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
+			"castshadow" : false,
+			"clampuvs" : true,
 			"config" : 
 			{
 				"passthrough" : true
 			},
 			"copybackground" : false,
 			"dependencies" : [ 143 ],
+			"disablepropagation" : false,
 			"effects" : 
 			[
 				{
@@ -639,19 +626,17 @@
 			"origin" : "1920.00000 1080.00000 0.00000",
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "1.05000 1.05000 1.00000",
-			"size" : "2048.00000 2048.00000",
-			"solid" : true
+			"size" : "2048.00000 2048.00000"
 		},
 		{
-			"alpha" : 1.0,
 			"anchor" : "none",
 			"backgroundbrightness" : 1.0,
 			"backgroundcolor" : "0.00000 0.00000 0.00000",
 			"blockalign" : false,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"depthtest" : "enabled",
+			"disablepropagation" : false,
 			"font" : "fonts/RazerF5-Bold.otf",
 			"horizontalalign" : "center",
 			"id" : 201,
@@ -673,7 +658,6 @@
 				"value" : "0.50000 0.50000 1.00000"
 			},
 			"size" : "443.00000 100.00000",
-			"solid" : true,
 			"text" : 
 			{
 				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2877039332';\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.title;\n}\n",
@@ -687,12 +671,9 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 194,
 			"image" : "models/workshop/2877039332/no_texture_preview.json",
 			"locktransforms" : true,
@@ -701,7 +682,6 @@
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "0.66500 0.66500 0.00000",
 			"size" : "512.00000 512.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : "songthumbnail",
@@ -710,11 +690,9 @@
 		},
 		{
 			"alignment" : "left",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 173,
 			"image" : "models/r_bar.json",
 			"locktransforms" : true,
@@ -723,7 +701,6 @@
 			"parallaxDepth" : "0.00000 0.00000",
 			"scale" : "1.32750 0.92000 1.00000",
 			"size" : "256.00000 20.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : "songdurationbar",
@@ -732,11 +709,9 @@
 		},
 		{
 			"alignment" : "right",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"effects" : 
 			[
 				{
@@ -781,7 +756,6 @@
 				"value" : "1.32750 0.07225 1.00000"
 			},
 			"size" : "256.00000 256.00000",
-			"solid" : true,
 			"visible" : 
 			{
 				"user" : "songdurationbar",
@@ -789,15 +763,14 @@
 			}
 		},
 		{
-			"alpha" : 1.0,
 			"anchor" : "none",
 			"backgroundbrightness" : 1.0,
 			"backgroundcolor" : "0.00000 0.00000 0.00000",
 			"blockalign" : false,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"depthtest" : "enabled",
+			"disablepropagation" : false,
 			"font" : "fonts/RazerF5-Bold.otf",
 			"horizontalalign" : "center",
 			"id" : 207,
@@ -815,7 +788,6 @@
 			"pointsize" : 25.0,
 			"scale" : "0.50000 0.50000 1.00000",
 			"size" : "527.00000 100.00000",
-			"solid" : true,
 			"text" : 
 			{
 				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2877039332';\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.albumArtist;\n}\n",
@@ -829,12 +801,9 @@
 			}
 		},
 		{
-			"alignment" : "center",
-			"alpha" : 1.0,
-			"brightness" : 1.0,
-			"color" : "1.00000 1.00000 1.00000",
-			"colorBlendMode" : 0,
-			"copybackground" : true,
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"effects" : 
 			[
 				{
@@ -894,8 +863,7 @@
 			"image" : "models/util/fullscreenlayer.json",
 			"locktransforms" : true,
 			"name" : "Vignette",
-			"parallaxDepth" : "0.00000 0.00000",
-			"solid" : true
+			"parallaxDepth" : "0.00000 0.00000"
 		}
 	],
 	"version" : 1
