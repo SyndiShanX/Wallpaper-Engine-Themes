@@ -6,13 +6,13 @@
 			"blending" : "additive",
 			"constantshadervalues" : 
 			{
-				"ui_editor_properties_overbright" : 2.5
+				"ui_editor_properties_overbright" : 0
 			},
 			"cullmode" : "nocull",
 			"depthtest" : "disabled",
 			"depthwrite" : "disabled",
 			"shader" : "genericparticle",
-			"textures" : [ "particle/Snow_Small" ]
+			"textures" : [ "particle/St_Patricks_Small" ]
 		}
 	]
 }

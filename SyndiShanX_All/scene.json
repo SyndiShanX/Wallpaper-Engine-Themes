@@ -1,8 +1,8 @@
 {
 	"camera" : 
 	{
-		"center" : "1369.07812 -672.67535 -1.00000",
-		"eye" : "1369.07812 -672.67535 0.00000",
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
 		"up" : "0.00000 1.00000 0.00000"
 	},
 	"general" : 
@@ -175,6 +175,25 @@
 		},
 		{
 			"disablepropagation" : false,
+			"id" : 220,
+			"locktransforms" : true,
+			"name" : "Small Particles (St Patricks)",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/St_Patricks_Small.json",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "5",
+					"name" : "particles"
+				},
+				"value" : false
+			}
+		},
+		{
+			"disablepropagation" : false,
 			"id" : 109,
 			"locktransforms" : true,
 			"name" : "Small Particles (Spring)",
@@ -251,6 +270,25 @@
 		},
 		{
 			"disablepropagation" : false,
+			"id" : 217,
+			"locktransforms" : true,
+			"name" : "Medium Particles (St Patricks)",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/St_Patricks_Medium.json",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "5",
+					"name" : "particles"
+				},
+				"value" : false
+			}
+		},
+		{
+			"disablepropagation" : false,
 			"id" : 215,
 			"locktransforms" : true,
 			"name" : "Medium Particles (Spring)",
@@ -323,6 +361,25 @@
 					"name" : "particles"
 				},
 				"value" : true
+			}
+		},
+		{
+			"disablepropagation" : false,
+			"id" : 213,
+			"locktransforms" : true,
+			"name" : "Large Particles (St Patricks)",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/St_Patricks_Large.json",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "5",
+					"name" : "particles"
+				},
+				"value" : false
 			}
 		},
 		{
@@ -427,6 +484,28 @@
 			"castshadow" : false,
 			"clampuvs" : true,
 			"disablepropagation" : false,
+			"id" : 427,
+			"image" : "models/St_Patricks.json",
+			"locktransforms" : true,
+			"name" : "Logo (St Patricks)",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"scale" : "0.75000 0.75000 1.00000",
+			"size" : "1080.00000 1080.00000",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "6",
+					"name" : "centerimage"
+				},
+				"value" : false
+			}
+		},
+		{
+			"castshadow" : false,
+			"clampuvs" : true,
+			"disablepropagation" : false,
 			"id" : 234,
 			"image" : "models/Spring.json",
 			"locktransforms" : true,
@@ -449,7 +528,7 @@
 			"castshadow" : false,
 			"clampuvs" : true,
 			"disablepropagation" : false,
-			"id" : 333,
+			"id" : 424,
 			"image" : "models/Summer.json",
 			"locktransforms" : true,
 			"name" : "Logo (Summer)",

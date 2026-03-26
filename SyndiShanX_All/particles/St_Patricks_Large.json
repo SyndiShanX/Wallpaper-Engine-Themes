@@ -1,0 +1,109 @@
+{
+	"animationmode" : "randomframe",
+	"children" : null,
+	"controlpoint" : 
+	[
+		{
+			"angles" : null,
+			"id" : 0
+		},
+		{
+			"angles" : null,
+			"id" : 1
+		},
+		{
+			"angles" : null,
+			"id" : 2
+		},
+		{
+			"angles" : null,
+			"id" : 3
+		},
+		{
+			"angles" : null,
+			"id" : 4
+		},
+		{
+			"angles" : null,
+			"id" : 5
+		},
+		{
+			"angles" : null,
+			"id" : 6
+		},
+		{
+			"angles" : null,
+			"id" : 7
+		}
+	],
+	"emitter" : 
+	[
+		{
+			"distancemax" : 1920,
+			"distancemin" : 32,
+			"id" : 6,
+			"name" : "sphererandom",
+			"origin" : "-50 0 0",
+			"rate" : 35
+		}
+	],
+	"initializer" : 
+	[
+		{
+			"id" : 2,
+			"max" : 5,
+			"min" : 3,
+			"name" : "lifetimerandom"
+		},
+		{
+			"id" : 3,
+			"max" : 150,
+			"min" : 50,
+			"name" : "sizerandom"
+		},
+		{
+			"id" : 4,
+			"max" : "50 50 0",
+			"min" : "-50 -50 0",
+			"name" : "velocityrandom"
+		},
+		{
+			"id" : 5,
+			"min" : "255 255 255",
+			"name" : "colorrandom"
+		}
+	],
+	"material" : "materials/particle/St_Patricks_Large.json",
+	"maxcount" : 150,
+	"operator" : 
+	[
+		{
+			"gravity" : "50 -100 0",
+			"id" : 7,
+			"name" : "movement"
+		},
+		{
+			"id" : 8,
+			"name" : "alphafade"
+		},
+		{
+			"endvalue" : 0.75,
+			"id" : 9,
+			"name" : "sizechange",
+			"startvalue" : 0.25
+		},
+		{
+			"force" : "0 0 0.5",
+			"id" : 10,
+			"name" : "angularmovement"
+		}
+	],
+	"renderer" : 
+	[
+		{
+			"id" : 1,
+			"name" : "sprite"
+		}
+	],
+	"starttime" : 0
+}

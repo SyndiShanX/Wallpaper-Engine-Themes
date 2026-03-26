@@ -96,6 +96,10 @@
 					{
 						"label" : "Snow",
 						"value" : "5"
+					},
+					{
+						"label" : "St Patricks",
+						"value" : "6"
 					}
 				],
 				"order" : 122,
@@ -266,6 +270,10 @@
 					{
 						"label" : "Snow",
 						"value" : "4"
+					},
+					{
+						"label" : "St Patricks",
+						"value" : "5"
 					}
 				],
 				"order" : 123,
@@ -395,7 +403,7 @@
 	"tags" : [ "Music" ],
 	"title" : "SyndiShanX Custom",
 	"type" : "scene",
-	"version" : 7,
+	"version" : 8,
 	"visibility" : "public",
 	"workshopid" : "2990493945",
 	"workshopurl" : "steam://url/CommunityFilePage/2990493945"
